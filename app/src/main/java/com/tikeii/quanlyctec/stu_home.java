@@ -354,6 +354,20 @@ public class stu_home extends AppCompatActivity implements NavigationView.OnNavi
 
     }
 
+    private void lienhe() {
+        Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.stu_lienhe_dialog);
+        dialog.setCanceledOnTouchOutside(false);
+        Button close = findViewById(R.id.stu_lienhe_xongbtn);
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.cancel();
+            }
+        });
+    }
+
 
 
 
